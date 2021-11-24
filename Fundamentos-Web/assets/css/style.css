@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+/* Estilos da página index.html*/ 
+
+.container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 0%;
+}
+
+.container h1{
+    font-size: 45px;
+    color:#682D70;
+    line-height: 0%;
+    text-shadow: 0 0 5px #FCC832;
+    font-family: 'Dancing Script', Verdana;
+}
+
+.container h3{
+    font-size: 20px;
+    color: #23B08A;
+    line-height: 0%;
+    text-shadow: 0 0 3px #FCC832;
+    font-family: 'Architects Daughter', Verdana;
+}
+.container p-25{
+    font-size: 25px;
+    color: #23B08A;
+    line-height: 0%;
+    text-shadow: 0 0 3px #FCC832;
+    font-family: 'Architects Daughter', Verdana;
+    padding: 20px;
+}
+
+.container p-18{
+    font-size: 18px;
+    color: #682D70;
+    line-height: 0%;
+    text-shadow: 0 0 3px #FCC832;
+    font-family: 'Architects Daughter', Verdana;
+    padding: 20px;
+}
+
+#menu li {
+    display: inline;
+    padding: 15px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #682D70;
+    font-size: 20px; 
+}
+
+#menu li a:hover {
+    color: #B08E2C;
+}
+
+.container-2{
+    display: flex;    
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.p-30 {
+    text-align: justify;
+    padding: 30px;
+    font-size: 15px ;
+    font-family: Verdana;
+    color: #682D70;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.wh{
+    width: 400px;
+    height: 400px;    
+}
+
+#lista li{
+    display: inline;
+}
+.tm-social{
+   width: 50px;
+   height: 50px;
+   padding: 0 30px;
+}
+
+/*Estilos da página contato.html*/
+
+.ml-50{
+    margin-left: 50px;
+}
