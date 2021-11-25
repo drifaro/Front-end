@@ -115,10 +115,35 @@
     margin-bottom: 50px;
 }
 
+
+.container-4{
+    display: flex;    
+    flex-flow: row;
+    align-items: center;
+    text-align: left;
+    padding: 50px;
+    background-color: rgb(194, 191, 224);
+}
+
 .custom{
     font-size: 20px;
     color: #682D70;
     line-height: 100%;
     text-shadow: 0 0 10px #23B08A;
     font-family: 'Architects Daughter', Verdana;
+}
+
+#txtNome{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+#txtEmail{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+#txtAssunto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
 }
