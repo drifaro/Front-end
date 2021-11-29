@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <!-- Meta tags Obrigatórias -->
@@ -9,17 +9,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
     <style>
         .tm-social {
             width: 35px;
             height: 35px;
         }
     </style>
-    <title>Drizoca!</title>
+    <title>Drizoca</title>
 </head>
 
 <body>
+
     <!-- Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="https://www.linkedin.com/in/drislainefaro/">Drizoca</a>
@@ -72,112 +72,60 @@
     </nav>
     <!-- /Menu -->
 
-    <!-- Carousel-->
-    <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100"
-                        src="https://files.antena2.com/antena2/public/styles/imagen_despliegue/public/2020-06/valorant_0.jpg?itok=fdX-DsLR"
-                        alt="Primeiro Slide">
+    <!--Formulário-->
+    <div class="container p-5">
+        <form class="needs-validation" novalidate>
+            <div class="form-group-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom01">Nome: </label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" value=""
+                        required>
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100"
-                        src="https://woomagazine.com.br/wp-content/uploads/2020/05/Imagine-Dragons.jpg"
-                        alt="Segundo Slide">
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom02">E-mail:</label>
+                    <input type="email" class="form-control" id="validationCustom02" placeholder="example@email.com"
+                        id="email" required>
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100"
-                        src="https://www.teahub.io/photos/full/190-1908099_harry-potter-wallpapers-full-hd-awesome-wallpapers-harry.jpg"
-                        alt="Terceiro Slide">
+                <div class="col-md-4 mb-3">
+                    <label for="validationTextarea">Messagem</label>
+                    <textarea class="form-control is-invalid" id="validationTextarea"
+                        placeholder="Digite uma mensagem para Dri..." required></textarea>
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Enviar</button>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
-        </div>
+        </form>
+        <script>
+            // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Faz um loop neles e evita o envio
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
     </div>
-    <!--/Carousel-->
-
-    <!--Jumbotron-->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-1 text-center">Olá, eu sou a Dri 👩🏻‍💻 </h1>
-            <p class="lead text-center">Sejam bem-vindes ao meu site, aqui você irá conhecer um pouco mais sobre mim e
-                tudo que eu gosto!</p>
-        </div>
-    </div>
-    <!--/Jumbotron-->
-
-    <!--Texto e Imagem-->
-    <div class="container mt-5 mb-5 ">
-
-        <div class="row align-content-center">
-            <div class="col-md-6 justify-content-md-center">
-                <h3>Quem sou eu...</h3><br>
-                <p>
-                    Olá, meu nome é Drislaine Andrade de Faro, tenho 26 anos, nordestina arretada natural de Aracaju/SE.
-                    Sou mamãe de pets lindas, a Zoe e Nala. Me formei em engenharia civil em dezembro de 2017, mas nunca
-                    tive paixão pela área, eu sentia que o que me encantava mesmo era a tecnologia, mas por falta de
-                    conhecimento não iniciei cedo. Atualmente moro em Botucatu/SP com a minha namorada Erika, sai do meu
-                    estado com o objetivo de transformar o meu sonho em realidade, eu precisava fazer o que amava e
-                    entrar para a área de desenvolvimento, foi quando me surgiu a oportunidade de entrar a Generation
-                    Brasil e através dela que comecei a realizar o meu sonho.
-                </p>
-                <p>
-                    A Generation não me transformou apenas em uma Desenvolvedora Web Full-Stack Java, ela também me
-                    ensinou como lidar com pessoas e como trabalhar melhor em equipe. Me ajudou a melhorar a minha
-                    comunicação e proatividade, que devido a problemas pessoais nunca foram meus pontos fortes. O melhor
-                    de tudo isso é que acabei desenvolvendo cada vez mais a minha persistência, o fato de eu ser uma
-                    pessoa curiosa sempre me ajudou em desafios, mas adentrando ao mundo da programação eu percebi que
-                    persistência nunca é demais, rs.
-                </p>
-            </div>
-            <div class="col-md-6 text-center mb-5">
-                <img width="500px" src="assets/img/Minha Foto.jpeg">
-
-            </div>
-        </div> <br>
-        <!--/Texto e Imagem-->
-
-        <!--Card decks-->
-        <div class="card-deck">
-            <div class="card bg-dark p-1">
-                <iframe
-                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9tzt7g58Xlh?utm_source=generator&theme=0"
-                    width="100%" height="380" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                <div class="card-body">
-                    <h5 class="card-title text-light">Banda favorita</h5>
-                    <p class="card-text text-light">Imagine Dragons</p>
-                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-                </div>
-            </div>
-            <div class="card bg-dark p-1">
-                <iframe width="530" height="380" src="https://www.youtube.com/embed/V_JtCbmkPA0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title text-light">Filme Favorito</h5>
-                    <p class="card-text text-light">Harry Potter e o Prisioneiro de Askaban</p>
-                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <!--/Card decks-->
 
     <!-- Footer -->
     <footer class="bg-light text-center ">
